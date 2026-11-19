@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dcadastro</title>
+</head>
+<body>
+    <h1>Formulario de cadastro de alunos</h1>
+<form method="POST">
+{% csrf_token %}
+<input type="text" name="nome" placeholder="Nome do aluno" requiered> <br>
+<input type="number" name="idade" placeholder="Idade do aluno"> <br>
+<input type="email" name="email" placeholder="Email do aluno"> <br>
+<input type="text" name="telefone" placeholder="Telefone do aluno"> <br>
+<input type="text" name="endereco" placeholder="Endereço do aluno"> <br>
+<input type="submit" value="Cadastrar">
+</form>
+</body>
+</html>
