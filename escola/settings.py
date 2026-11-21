@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qsx3&8$xr772*_pq(dk2-b_ti9=2%l!^%3v1l951rr-#8hsfpy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -124,8 +124,6 @@ STATICFILES_DIRS = [
 
 import os
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'chave-local-de-teste')
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com']
 
